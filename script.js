@@ -19,13 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Dynamic Content Change
+    // 2. Dynamic Content Change with Alert
     const changeContentBtn = document.getElementById('changeContentBtn');
     const dynamicContent = document.getElementById('dynamicContent');
     let contentToggle = true;
 
     if (changeContentBtn && dynamicContent) {
         changeContentBtn.addEventListener('click', () => {
+            // Alert message on button click
+            alert("You clicked the Learn More button!");
+
             if (contentToggle) {
                 dynamicContent.textContent = "We are constantly innovating and striving for excellence in all our endeavors. Our commitment is to our users and their satisfaction. This is the new dynamic content!";
                 changeContentBtn.textContent = "Revert Content";
